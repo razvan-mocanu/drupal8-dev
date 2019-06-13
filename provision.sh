@@ -79,6 +79,23 @@ cat > /tmp/playground.conf <<'EOF'
 EOF
 sudo cp /tmp/playground.conf /etc/httpd/conf.d/playground.conf >> /vagrant/provision.log 2>&1
 
+cat > /tmp/30-xdebug.ini <<'EOF'
+zend_extension = /usr/lib64/php/modules/xdebug.so
+[xdebug]
+xdebug.default_enabled=0
+xdebug.cli_color=1
+xdebug.screem=1
+xdebug.idekey=xdebug
+xdebug.remote_enable=1
+xdebug.remote_connect_back=1
+#xdebug.remote_host=192.168.101.10
+xdebug.overload_var_dump=2
+xdebug.var_display_max_children=-1
+xdebug.var_display_max_data=-1
+xdebug.var_display_max_depth=-1
+EOF
+sudo cp /tmp/30-xdebug.ini /etc/php.d/30-xdebug.ini >>  /vagrant/provision.log 2>&1
+
 echo ">>> Configuring SSL"
 sudo cp /vagrant/tools/ssl/dev.crt /etc/pki/tls/certs/ >> /vagrant/provision.log 2>&1
 sudo cp /vagrant/tools/ssl/dev.key /etc/pki/tls/private/ >> /vagrant/provision.log 2>&1
