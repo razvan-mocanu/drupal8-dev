@@ -114,4 +114,12 @@ sudo touch /etc/environment
 sudo echo "LANG=en_US.UTF-8" >> /etc/environment
 sudo echo "LC_ALL=en_US.UTF-8" >> /etc/environment
 
+echo ">>> Installing composer packages"
+cd /vagrant >> /vagrant/provision.log 2>&1
+composer install >> /vagrant/provision.log 2>&1
+
 echo ">>> Done <<<"
+
+echo "Perform the following manual steps:"
+echo "1. Go to http://admin.webapp.lokal/ and install Drupal"
+echo "2. Inside the box (vagrant ssh), cd into /vagrant and then enable modules: ./vendor/bin/drush en admin_toolbar admin_toolbar_tools search_api search_api_db dropzonejs dropzonejs_eb_widget entity_browser embed entity_embed file_browser basic_auth rest serialization webapp"
