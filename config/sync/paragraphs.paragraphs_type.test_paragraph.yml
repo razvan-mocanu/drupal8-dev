@@ -1,9 +1,0 @@
-uuid: b2f5e469-f71c-463f-a30f-2259b272cb70
-langcode: en
-status: true
-dependencies: {  }
-id: test_paragraph
-label: 'Test paragraph'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }
