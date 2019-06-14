@@ -9,7 +9,7 @@ dependencies:
     - search_api
     - node
 _core:
-  default_config_hash: GLmLegZGHtMF6annRqgjizJAoiAip-IT-XOsDMCZfog
+  default_config_hash: MkgrVr-IboH7vJGbE_l3DbnVh1HuAU71_Y49CiitBt0
 id: default_index
 name: 'Default content index'
 description: 'Default content index created by the Database Search Defaults module'

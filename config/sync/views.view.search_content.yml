@@ -1,3 +1,4 @@
+uuid: 99f65690-ba9f-4d02-a518-4022d29f8360
 langcode: en
 status: true
 dependencies:
@@ -9,7 +10,7 @@ dependencies:
     - serialization
     - webapp
 _core:
-  default_config_hash: EeNNkLARDmftWehrk-ew_OW8srW2RgDKI1mZrWxZ-ao
+  default_config_hash: hNLF_UPCj5Dv7bZ3rrpZRf0G4ob26So4eeecRwSNZvw
 id: search_content
 label: 'Search content'
 module: views

@@ -25,6 +25,7 @@
         "drupal/core": "^8.7.0",
         "drupal/entity_browser": "^2.1",
         "drupal/file_browser": "^1.1",
+        "drupal/flag": "^4.0@alpha",
         "drupal/paragraphs": "^1.8",
         "drupal/search_api": "^1.13",
         "drush/drush": "^9.0.0",
